@@ -20,7 +20,7 @@ spec:
           image: mavavericks/eureka-server
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 8600
+            - containerPort: 8671
               protocol: TCP
       restartPolicy: Always
 
@@ -36,8 +36,8 @@ spec:
     app: eureka-server
   ports:
     - protocol: TCP
-      port: 8671
-      targetPort: 8600
+      port: 8600
+      targetPort: 8671
   type: NodePort
     
       
