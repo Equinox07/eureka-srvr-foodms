@@ -16,8 +16,8 @@ spec:
         app: eureka-server
     spec:
       containers:
-        - name: eureka-server:0.0.1
-          image: mavavericks/eureka-server
+        - name: eureka-server
+          image: mavavericks/eureka-server:0.0.1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8671
