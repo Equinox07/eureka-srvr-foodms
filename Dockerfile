@@ -8,4 +8,6 @@ WORKDIR /opt
 
 COPY target/*.jar /opt/app.jar
 
+EXPOSE 8671
+
 ENTRYPOINT exec java $JAVA_OPTS -jar app.jar
